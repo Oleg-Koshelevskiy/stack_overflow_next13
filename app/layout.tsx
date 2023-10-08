@@ -1,5 +1,6 @@
 import React from "react";
 import { ClerkProvider } from "@clerk/nextjs";
+import { ukUA } from "@clerk/localizations";
 import { Inter, Space_Grotesk } from "next/font/google";
 import type { Metadata } from "next";
 
@@ -41,6 +42,7 @@ export default function RootLayout({
               footerActionLink: "primary-text-gradient hover:text-primary-500",
             },
           }}
+          localization={ukUA}
         >
           <ThemeProvider>{children}</ThemeProvider>
         </ClerkProvider>
