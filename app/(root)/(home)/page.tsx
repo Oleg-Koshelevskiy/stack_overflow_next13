@@ -1,4 +1,5 @@
 import HomeFilters from "@/components/home/HomeFilters";
+import QuestionCard from "@/components/home/QuestionCard";
 import Filter from "@/components/shared/Filter";
 import LocalSearchbar from "@/components/shared/search/LocalSearchbar";
 import { Button } from "@/components/ui/button";
@@ -33,6 +34,10 @@ export default function Home() {
       </div>
 
       <HomeFilters />
+      <div className="mt-10 flex w-full flex-col gap-6">
+        {/* render list */}
+        <QuestionCard />
+      </div>
     </>
   );
 }
